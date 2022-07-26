@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Антон Тарасенко](https://up.htmlacademy.ru/adaptive/26/user/1501321).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
