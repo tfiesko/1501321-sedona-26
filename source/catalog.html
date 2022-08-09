@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo-small" href="#">
+    <header class="header">
+      <a class="header__logo-small" href="index.html">
         <img src="img/header-logo.svg" alt="City of sedona." width="185" height="196">
       </a>
       <nav class="main-nav">
@@ -16,31 +18,31 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a href="#">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__list-item main-nav__list-item--active">
-              <a href="#">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a href="#">
+              <a class="main-nav__link" href="form.html">
                 форма отзыва
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 HTML Academy
               </a>
             </li>
           </ul>
         </div>
-        <div class="main-header__logo-big logo-big">
-          <img src="img/logo-big.svg" alt="Добро пожаловать в Седону!" width="282" height="214">
-        </div>
       </nav>
+      <div class="header__logo-big logo-big logo-big--inner">
+        <img class="logo-big__img" src="img/big-logo-inner.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
+      </div>
     </header>
     <main class="main-container">
       <h1 class="page-title">Фото и видео</h1>

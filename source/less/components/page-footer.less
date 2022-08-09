@@ -1,0 +1,33 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 233px;
+  margin: 0 auto;
+  width: 284px;
+
+  text-align: center;
+}
+
+.page-footer__social {
+  margin: 0;
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+  }
+}
