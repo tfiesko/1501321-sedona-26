@@ -53,7 +53,7 @@
           </h2>
           <form class="feedback__form" method="post"  action="https://echo.htmlacademy.ru/">
             <div class="feedback__form-group-wrapper">
-              <fieldset class="feedback__form-user-name form-group">
+              <fieldset class="feedback__form-group form-group form-group--user-name">
                 <legend class="form-group__title">
                   Представьтесь:
                 </legend>
@@ -76,25 +76,25 @@
                   <input class="form-group__field" name="user-patronymic" id="user-patronymic" type="text" value="Викторович">
                 </div>
               </fieldset>
-              <fieldset class="feedback__form-contacts form-group">
+              <fieldset class="feedback__form-group form-group form-group--user-contacts">
                 <legend class="form-group__title">
-                  Контактная информация
+                  Контактная информация:
                 </legend>
-                <div class="form-group__item">
+                <div class="form-group__item form-group__item--tel">
                   <label class="form-group__field-label" for="user-tel">
                     Контактный телефон*:
                   </label>
-                  <input class="form-group__field form-group__field--tel" name="user-tel" id="user-tel" placeholder="Введите телефон" required type="tel">
+                  <input class="form-group__field" name="user-tel" id="user-tel" placeholder="Введите телефон" required type="tel">
                 </div>
-                <div class="form-group__item">
+                <div class="form-group__item form-group__item--email">
                   <label class="form-group__field-label" for="user-email">
                     Электронная почта*:
                   </label>
-                  <input class="form-group__field form-group__field--email" name="user-email" id="user-email" placeholder="Введите e-mail" required type="email">
+                  <input class="form-group__field" name="user-email" id="user-email" placeholder="Введите e-mail" required type="email">
                 </div>
               </fieldset>
             </div>
-            <fieldset class="feedback__form-impression form-group form-group--wrap">
+            <fieldset class="feedback__form-group form-group form-group--wrap">
               <legend class="form-group__title">
                 Ваше общее впечатление:
               </legend>
@@ -111,7 +111,7 @@
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </fieldset>
-            <fieldset class="feedback__form-sights form-group form-group--wrap">
+            <fieldset class="feedback__form-group form-group form-group--wrap">
               <legend class="form-group__title">
                 Посещенные достопримечательности:
               </legend>
@@ -132,7 +132,7 @@
                 <span class="control__label">Красные скалы</span>
               </label>
             </fieldset>
-            <fieldset class="feedback__form-emotions form-group">
+            <fieldset class="feedback__form-group form-group">
               <legend class="form-group__title">
                 Опишите свои эмоции:
               </legend>

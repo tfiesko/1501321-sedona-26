@@ -25,6 +25,35 @@
   &--with-background {
     background-color: #eeeeee;
   }
+
+  &--icons-decorated {
+    width: 87.5%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-left: 47px;
+
+    text-align: start;
+
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  &--house {
+    background-image: url("../img/icons/icon-house.svg");
+    background-size: 39px 37px;
+  }
+
+  &--food {
+    padding-left: 52px;
+
+    background-image: url("../img/icons/icon-burger.svg");
+    background-size: 40px 35px;
+  }
+
+  &--gift {
+    background-image: url("../img/icons/icon-gift.svg");
+    background-size: 32px 38px;
+  }
 }
 
 .advantages__item-picture {
@@ -48,6 +77,35 @@
         order: -1;
       }
     }
+
+    &--icons-decorated {
+      width: auto;
+      min-height: 330px;
+      padding-top: 110px;
+      padding-left: 0;
+
+      text-align: center;
+
+      background-position: center 60px;
+    }
+
+    &--house {
+      background-size: 75px 72px;
+    }
+
+    &--food {
+      background-size: 76px 68px;
+    }
+
+    &--gift {
+      background-size: 64px 75px;
+    }
+  }
+
+  .advantages__item-text-content {
+    width: 195px;
+    margin: 0 auto;
+    margin-top: 42px;
   }
 
   .advantages__item-picture {
@@ -57,7 +115,7 @@
     height: 256px;
 
     &--scale-position {
-      object-position: top calc(27px - 3.4vw) right 0;
+      object-position: top calc(0px + 10%) right 0;
     }
   }
 
