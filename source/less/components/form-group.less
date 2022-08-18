@@ -1,0 +1,140 @@
+.form-group {
+  position: relative;
+
+  padding: 0;
+  padding-bottom: 34px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &--wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-group__item {
+  position: relative;
+  min-width: 280px;
+  flex-grow: 1;
+  margin-bottom: 16px;
+
+  &--tel {
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 58px;
+      height: 58px;
+
+      content: "";
+
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 18px 18px;
+    }
+  }
+
+  &--email {
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 58px;
+      height: 58px;
+
+      content: "";
+
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px 12px;
+    }
+  }
+}
+
+.form-group__title {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.form-group__field {
+  display: block;
+  width: 100%;
+  height: 58px;
+
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+
+  background-color: #f2f2f2;
+  border: none;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.form-group__field-label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.form-group__textarea {
+  width: 100%;
+  height: 150px;
+  padding: 0;
+
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+
+  resize: none;
+  border: none;
+  background-color: #f2f2f2;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-group {
+    &--user-name {
+      flex-grow: 1;
+
+      border-right: 1px solid #dbdbdd;
+
+      .form-group__item {
+        margin-right: 43px;
+      }
+    }
+
+    &--user-contacts {
+      flex-grow: 1;
+
+      .form-group__item {
+        margin-left: 43px;
+      }
+    }
+  }
+
+  .form-group__title {
+    font-size: 21px;
+  }
+
+  .form-group__textarea {
+    height: 160px;
+  }
+}

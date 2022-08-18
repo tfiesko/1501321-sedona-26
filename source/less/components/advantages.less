@@ -1,0 +1,126 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__title {
+
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  &--wide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #81b3d2;
+  }
+
+  &--with-background {
+    background-color: #eeeeee;
+  }
+
+  &--icons-decorated {
+    width: 87.5%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-left: 47px;
+
+    text-align: start;
+
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  &--house {
+    background-image: url("../img/icons/icon-house.svg");
+    background-size: 39px 37px;
+  }
+
+  &--food {
+    padding-left: 52px;
+
+    background-image: url("../img/icons/icon-burger.svg");
+    background-size: 40px 35px;
+  }
+
+  &--gift {
+    background-image: url("../img/icons/icon-gift.svg");
+    background-size: 32px 38px;
+  }
+}
+
+.advantages__item-picture {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    min-height: 256px;
+
+    &--wide {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(256px, 1fr));
+      grid-column: span 3;
+    }
+
+    &--wide-reverse {
+      .advantages__item-picture {
+        order: -1;
+      }
+    }
+
+    &--icons-decorated {
+      width: auto;
+      min-height: 330px;
+      padding-top: 110px;
+      padding-left: 0;
+
+      text-align: center;
+
+      background-position: center 60px;
+    }
+
+    &--house {
+      background-size: 75px 72px;
+    }
+
+    &--food {
+      background-size: 76px 68px;
+    }
+
+    &--gift {
+      background-size: 64px 75px;
+    }
+  }
+
+  .advantages__item-text-content {
+    width: 195px;
+    margin: 0 auto;
+    margin-top: 42px;
+  }
+
+  .advantages__item-picture {
+    grid-column: span 2;
+    object-fit: cover;
+    width: 100%;
+    height: 256px;
+
+    &--scale-position {
+      object-position: top calc(0px + 10%) right 0;
+    }
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(256px, 1fr));
+  }
+}

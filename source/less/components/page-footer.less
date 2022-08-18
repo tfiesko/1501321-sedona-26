@@ -1,0 +1,24 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 233px;
+  margin: 0 auto;
+  width: 284px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+  }
+
+  .page-footer__item {
+    min-width: 156px;
+  }
+}
