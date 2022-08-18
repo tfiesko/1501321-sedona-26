@@ -10,8 +10,31 @@
 }
 
 .video__description {
-  padding: 0 2px;
+  max-width: 277px;
+  margin: 15px auto;
+
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.video__preview {
+  width: 280px;
+  height: 177px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    min-width: 648px;
+  }
+
+  .video__description {
+    max-width: 445px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    min-width: 800px;
+  }
 }
