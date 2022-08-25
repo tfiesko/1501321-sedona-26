@@ -2,17 +2,26 @@
   text-align: center;
 }
 
+.promo__wrapper {
+  width: 284px;
+  margin: 39px auto 50px;
+}
+
 .promo__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
-.promo__wrapper {
-
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 520px;
+    margin: 60px auto 58px;
+  }
 }
 
-.promo__button {
-
-
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    margin: 60px auto 65px;
+  }
 }
