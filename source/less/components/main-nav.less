@@ -1,7 +1,64 @@
 .main-nav {
+  position: relative;
+
+  min-height: 56px;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;
+}
+
+.main-nav--close .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 16px;
+    margin: 0 auto;
+
+    display: block;
+    width: 28px;
+    height: 4px;
+    content: "";
+
+    background-color: #81b3d2;
+    box-shadow:
+      0 9px 0 0 #81b3d2,
+      0 -9px 0 0 #81b3d2;
+  }
+}
+
+.main-nav--open .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 16px;
+    margin: 0 auto;
+
+    transform: rotate(45deg);
+
+    display: block;
+    width: 28px;
+    height: 4px;
+    content: "";
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
 }
 
 .main-nav__list {
@@ -11,6 +68,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 13px;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list-item {
@@ -55,16 +139,29 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    width: @tablet-width;
-    margin: 0 auto;
+@media (max-width: @mobile-width-only) {
+  .main-nav--close .main-nav__list {
+    display: none;
   }
 
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 29px;
+  }
+
+  .main-nav__wrapper {
+    position: relative;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list-item {

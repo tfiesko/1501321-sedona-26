@@ -1,4 +1,5 @@
 .social {
+  width: 155px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -7,14 +8,33 @@
   list-style: none;
 }
 
-.social__item {
-
+.social__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .social__link {
+  position: relative;
+
   display: block;
   width: 48px;
   height: 48px;
 
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }

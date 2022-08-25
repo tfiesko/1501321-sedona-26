@@ -12,10 +12,8 @@
         <a class="header__logo-small" href="index.html">
           <img src="img/logo-small.svg" alt="City of sedona." width="185" height="96">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <nav class="main-nav main-nav--close main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item main-nav__list-item--current">
@@ -110,36 +108,51 @@
           </ul>
         </section>
         <section class="promo">
-          <div class="promo__wrapper wrapper">
+          <div class="promo__wrapper">
             <h2 class="promo__title">Заинтересовались?</h2>
             <p class="promo__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button promo__button" href="#">Найти гостиницу</a>
           </div>
         </section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26187.94422306827!2d-111.76299093165353!3d34.868963927045705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sen!2sru!4v1661444479064!5m2!1sen!2sru" width="320" height="350" allowfullscreen title="Расположение Седоны"></iframe>
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <b class="page-footer__item hashtag">#visitsedona</b>
           <ul class="page-footer__item social">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="24" height="14">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg class="social__icon" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-tg"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon" width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <div class="page-footer__item page-footer__item--padding-left copyright">
-            <b class="copyright__text">Разработанно</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">Разработано</span>
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
