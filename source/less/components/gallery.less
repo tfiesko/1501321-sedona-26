@@ -22,6 +22,10 @@
   font-weight: 700;
 }
 
+.gallery__card-likes-icon {
+  fill: fade(#000000, 30%);
+}
+
 .gallery__card-list {
   padding: 0;
   margin: 0;
@@ -41,6 +45,10 @@
   width: 280px;
   min-height: 280px;
   margin: 0 auto;
+}
+
+.gallery__card-likes-button {
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -99,6 +107,10 @@
     &--wide {
       grid-column: span 3;
     }
+  }
+
+  .gallery__card-likes-icon {
+    fill: #ffffff;
   }
 
   .gallery__card-caption {
