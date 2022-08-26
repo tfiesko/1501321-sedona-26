@@ -100,9 +100,11 @@
 }
 
 .form-group__textarea {
+  box-sizing: border-box;
   width: 100%;
   height: 150px;
-  padding: 0;
+  padding: 16px;
+
 
   font-family: inherit;
   font-size: inherit;
@@ -146,5 +148,11 @@
 
   .form-group__textarea {
     height: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-group__item {
+    min-width: 260px;
   }
 }
