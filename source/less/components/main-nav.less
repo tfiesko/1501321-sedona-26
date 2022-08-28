@@ -29,9 +29,11 @@
   }
 }
 
-.main-nav--open .main-nav__toggle {
-  &::before,
-  &::after {
+.main-nav--open {
+  z-index: 2;
+
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
     position: absolute;
     right: 0;
     left: 0;
@@ -48,7 +50,7 @@
     background-color: #ffffff;
   }
 
-  &::after {
+  .main-nav__toggle::after {
     transform: rotate(-45deg);
   }
 }
@@ -77,7 +79,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 10px;
   right: 13px;
 
