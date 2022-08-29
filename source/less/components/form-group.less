@@ -86,11 +86,6 @@
 
   background-color: #f2f2f2;
   border: none;
-
-  &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-  }
 }
 
 .form-group__field-label {
@@ -114,10 +109,30 @@
   resize: none;
   border: none;
   background-color: #f2f2f2;
+}
+
+.form-group__field,
+.form-group__textarea {
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
+    color: fade(#000000, 30%);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
   }
 }
 
