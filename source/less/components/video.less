@@ -19,13 +19,43 @@
 }
 
 .video__preview {
-  width: 280px;
-  height: 177px;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.video__play {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 48px;
+  height: 54px;
+
+  margin: auto;
+  padding: 0;
+
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  border: none;
+  background-color: fade(#ffffff, 70%);
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
   .video {
     min-width: 648px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    line-height: 32px;
   }
 
   .video__description {

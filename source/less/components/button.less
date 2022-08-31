@@ -1,9 +1,10 @@
 .button {
   display: block;
   padding: 30px;
-  padding-top: 14px;
+  padding-top: 18px;
   padding-bottom: 17px;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -13,4 +14,18 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

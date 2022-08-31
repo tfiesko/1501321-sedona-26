@@ -1,4 +1,6 @@
 .logo-big {
+  position: relative;
+
   min-height: 300px;
   padding-top: 90px;
 
@@ -8,6 +10,21 @@
   background-image: url("../img/intro-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+
+    width: 1200px;
+    height: 57px;
+
+    background-image: url("../img/intro-triangle.svg");
+  }
 
   &--inner {
     min-height: 108px;
@@ -56,7 +73,7 @@
 @media (min-resolution: 2dppx) {
   .logo-big {
     background-image: url("../img/intro-mobile@2x.jpg");
-    background-size: 768px auto;
+    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {

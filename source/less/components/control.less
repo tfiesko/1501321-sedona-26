@@ -19,14 +19,46 @@
     height: 46px;
 
     background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
   }
 
   &:checked {
-    &::before {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+
+      display: block;
+      width: 46px;
+      height: 46px;
+
       background-image: url("../img/icons/tick.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 22px 16px;
+    }
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    &::before {
+      background-color: lighten(#f2f2f2, 3%);
+    }
+
+    &::after {
+      opacity: 0.2;
     }
   }
 
@@ -63,4 +95,3 @@
 .control__label {
   margin-left: 16px;
 }
-
