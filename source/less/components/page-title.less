@@ -7,14 +7,42 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  &--inner {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-title {
-    width: 380px;
+    width: 435px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 21px;
 
     &--inner {
+      margin-top: 65px;
+
       font-size: 30px;
+    }
+
+    &--feedback {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    margin-top: 60px;
+
+    &--inner {
+      margin-top: 100px;
+    }
+
+    &--feedback {
+      margin-top: 115px;
+      margin-bottom: 30px;
     }
   }
 }

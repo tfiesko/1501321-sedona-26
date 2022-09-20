@@ -10,6 +10,10 @@
   width: 284px;
 }
 
+.page-footer--inner .page-footer__wrapper {
+  min-height: 240px;
+}
+
 .page-footer__social {
   margin: 40px 0;
   margin-top: 34px;
@@ -32,5 +36,23 @@
       box-sizing: border-box;
       padding-left: 24px;
     }
+  }
+
+  .page-footer--inner .page-footer__wrapper {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    padding: 0 115px;
+  }
+
+  .page-footer--inner .page-footer__wrapper {
+    min-height: 295px;
+  }
+
+  .page-footer--inner-form .page-footer__wrapper {
+    min-height: 200px;
   }
 }

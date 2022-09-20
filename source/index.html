@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="../favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+html">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png">
@@ -58,33 +58,47 @@
                 <span class="advantages__item-number">— №1 —</span>
                 <p class="advantages__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantages__item-picture" width="512" height="256" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Седона изнутри.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__item-picture" width="512" height="256" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Седона изнутри.">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--icons-decorated advantages__item--house">
               <div class="advantages__item-text-content">
                 <h3 class="advantages__item-title">Жилье</h3>
-                <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, все как&nbsp;в кино!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--icons-decorated advantages__item--food">
               <div class="advantages__item-text-content">
                 <h3 class="advantages__item-title">Еда</h3>
-                <p class="advantages__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages__item-description">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--icons-decorated advantages__item--gift">
               <div class="advantages__item-text-content">
                 <h3 class="advantages__item-title">Сувениры</h3>
-                <p class="advantages__item-description">Не только китайского, но и местного производства!</p>
+                <p class="advantages__item-description">Не только китайского, &nbsp;<br class="advantages__break-line"> но и местного производства!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--wide advantages__item--wide-reverse">
               <div class="advantages__item-text-content">
-                <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+                <h3 class="advantages__item-title">Там есть мост&nbsp;дьявола</h3>
                 <span class="advantages__item-number">— №2 —</span>
-                <p class="advantages__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="advantages__item-description">Да, по нему можно пройти! &nbsp;<br class="advantages__break-line"> Если&nbsp;вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__item-picture advantages__item-picture--scale-position" width="512" height="256" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Мост дьявола.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__item-picture advantages__item-picture--scale-position" width="512" height="256" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола.">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--with-background">
               <div class="advantages__item-text-content">
@@ -97,7 +111,7 @@
               <div class="advantages__item-text-content">
                 <h3 class="advantages__item-title">Красивая дорога</h3>
                 <span class="advantages__item-number">— №4 —</span>
-                <p class="advantages__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__item-description">Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--with-background">
@@ -112,7 +126,7 @@
         <section class="promo">
           <div class="promo__wrapper">
             <h2 class="promo__title">Заинтересовались?</h2>
-            <p class="promo__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="promo__description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
             <a class="button promo__button" href="#">Найти гостиницу</a>
           </div>
         </section>
