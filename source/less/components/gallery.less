@@ -111,6 +111,12 @@
       content: none;
     }
 
+    &:nth-child(2n +3) {
+      .gallery__card-caption {
+        background-color: #eaeaea;
+      }
+    }
+
     &--wide {
       grid-column: span 2;
 
@@ -151,6 +157,12 @@
 
   .gallery__card-item {
     position: relative;
+
+    &:nth-child(2n +3) {
+      .gallery__card-caption {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
 
     &--wide {
       grid-column: span 3;
