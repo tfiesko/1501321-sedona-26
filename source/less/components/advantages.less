@@ -144,7 +144,8 @@
 }
 
 .advantages__item-picture {
-  width: 100%;
+  display: block;
+  width: 100vw;
   height: 260px;
   object-fit: cover;
 }
@@ -155,7 +156,7 @@
 
     &--wide {
       display: grid;
-      grid-template-columns: repeat(3, minmax(256px, 1fr));
+      grid-template-columns: minmax(256px, 1fr) 2fr;
       grid-column: span 3;
     }
 
@@ -164,8 +165,10 @@
     }
 
     &--wide-reverse {
-      .advantages__item-picture {
-        order: -1;
+      grid-template-columns: 2fr minmax(256px, 1fr);
+
+      .advantages__item-text-content {
+        order: 2;
       }
     }
 
@@ -201,7 +204,6 @@
   }
 
   .advantages__item-picture {
-    grid-column: span 2;
     object-fit: cover;
     width: 100%;
     height: 256px;
