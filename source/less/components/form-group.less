@@ -261,10 +261,10 @@
     }
 
     &--attractions {
-      justify-content: space-between;
+      justify-content: flex-start;
       margin-top: 30px;
-      padding-left: 43px;
-      padding-right: 43px;
+      padding-left: 40px;
+      padding-right: 40px;
 
       .form-group__title {
         margin-bottom: 60px;
@@ -272,10 +272,12 @@
 
       .form-group__item {
         min-width: 150px;
-        padding: 0;
-        margin-right: 65px;
+        max-width: 185px;
+        margin-right: 54px;
+        padding-left: 5px;
+        padding-right: 5px;
 
-        &:last-child {
+        &:nth-of-type(4n) {
           margin-right: 0;
         }
       }
@@ -292,7 +294,7 @@
         padding: 0;
         margin-right: 65px;
 
-        &:last-child {
+        &:nth-of-type(3n) {
           margin-right: 0;
         }
       }
